@@ -30,9 +30,35 @@ Developed by : DHIVYAPRIYA R
 
 Registration Number : 212222230032
 
+import pandas as pd
 
-import pandas as pd import numpy as np import seaborn as sns df=pd.read_csv("SuperStore.csv") df df.head() df.info() df.describe() df.isnull().sum() df.dtypes df['Postal Code'].value_counts() sns.boxplot(x="Postal Code", data=df) sns.countplot(x="Postal Code", data=df) sns.distplot(df["Postal Code"]) sns.histplot(x="Postal Code", data=df)
+import numpy as np
 
+import seaborn as sns
+
+df=pd.read_csv("SuperStore.csv")
+
+df
+
+df.head()
+
+df.info()
+
+df.describe()
+
+df.isnull().sum()
+
+df.dtypes
+
+df['Sales'].value_counts()
+
+sns.boxplot(x="Sales", data=df)
+
+sns.countplot(x="Sales", data=df)
+
+sns.distplot(df["Sales"])
+
+sns.histplot(x="Sales", data=df)
 
 
 OUTPUT
